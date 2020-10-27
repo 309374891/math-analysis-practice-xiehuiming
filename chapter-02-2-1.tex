@@ -267,10 +267,25 @@ $|\log_b{a_n}-\log_b{a}|=|\log_b{\frac{a_n}{a}}|=\epsilon$
 
 (4).
 
-当b=1是，结论明显成立。
+对任意的$\epsilon>0,(a^b+\epsilon)^{\frac{1}{b}}-a>0,(a^b-\epsilon)^{\frac{1}{b}}-a<0$,存在$N_1$,当$n>N_1$时
 
-当b>1时，对任意满足$0<\epsilon<a^b$的$\epsilon,\exists{N_1},\forall{n>N_1},b^a-\epsilon<a_n<b^a+\epsilon$
+$(a^b-\epsilon)^{\frac{1}{b}}-a<a_n-a<(\epsilon+a^b)^{\frac{1}{b}}-a$，得$(a^b-\epsilon)^{\frac{1}{b}}<a_n<(a^b+\epsilon)^{\frac{1}{b}}$
 
-$|a_n^b-a^b|$
+所以$a^b-\epsilon<a_n^b<a^b+\epsilon$,即$|a_n^b-a^b|<\epsilon$
+
+或者$a_n^b=e^{b\ln{a_n}}$,由(2),(3)结果知结论成立。
+
+(5).
+
+对任意的$0<\epsilon<\frac{\pi}{2}$,存在N,当n>N时，$|a_n-a|<\epsilon$,则：
+
+$|\sin{a_n}-\sin{a}|=|2\cos\frac{a_n+a}{2}\sin\frac{a_n-a}{2}|\le2|\sin\frac{a_n-a}{2}|<2.|\frac{a_n-a}{2}|=\epsilon(0<x<\frac{\pi}{2},\sin{x}<x)$
+
+
+5.设a>0,证明$\lim\limits_{n\to\infty}{\frac{\log_an}{n}}=0$
+
+证：$\frac{\log_a{n}}{n}=\frac{1}{n}\log_a{n}=\log_a{\sqrt[n]{n}}$
+
+根据上一题的结论，$\lim\limits_{n\to\infty}{\frac{\log_an}{n}}=\log_a{1}=0.(\lim\limits_{n\to\infty}\sqrt[n]{n}=1)$.
 
 \end{document}

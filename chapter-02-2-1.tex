@@ -151,33 +151,33 @@ $a_n=\frac{1}{n}$的极限为0.
 
 对于给定的$\epsilon>0$,取$N=[\sqrt{\frac{4}{\epsilon}}]+1$即可。
 
-(4).当$a\ge1$1时，$|\frac{a^n}{n!}|\le\frac{1}{n!}\le\frac{1}{n}$,对于给定的$\epsilon$,取$N=[\frac{1}{\epsilon}]+1$即可。
+(4).
 
-当$a\le1$时，$|\frac{a^n}{n!}|\le|\frac{1}{n}|$,所以对给定的$\epsilon$,取$N=[\frac{1}{\epsilon}]+1$即可。
+当$a\le1$时，$|\frac{a^n}{n!}|\le|\frac{1}{n!}|\le|\frac{1}{n}|$,所以对给定的$\epsilon$,取$N=[\frac{1}{\epsilon}]+1$即可。
 
+当a>1时,记$N_1=[a]+1,\textrm{则}a<N_1$
 
+当$n>N_1$
 
-当a>1时
+$\frac{a^n}{n!}=\frac{a}{1}\times\frac{a}{2}...\times\frac{a}{N_1}...\times\frac{a}{n}<\frac{a^{N_1}}{N_1!}\frac{a}{n}$
 
-当$n>N_1^{N_1}+1$时,记$n=N_1^{N_1}+k(k=1,2,...),\textrm{则}a^n=a^{N_1}a^k$
-
-$n!>n(N_1^{N_1}+1)(N_1^{N_1}+2)...(N_1^{N_1}+k)>nN_1^{N_1+k}>na^{N_1}a^k=na^n$
-
-$|\frac{a^n}{n!}|<|\frac{a^n}{na^n}|=\frac{1}{n}$
-
-所以对于给定的$\epsilon>0$取$N=max\{N_1^{N_1}+1,[\frac{1}{\epsilon}+1]\}$即可。
+所以取$N=max\{N_1+1,[\frac{a^{N_1+1}}{N_1!\epsilon}]+1\}$
 
 2.设$a_n\ge0,n\in{N_+}$,数列$a_n$收敛于a,则$\lim\limits_{n\to\infty}\sqrt{a_n}=\sqrt{a}$.
 
-证：对任意的$\epsilon>0,\exists{N},\forall{}n>N,|a_n-a|<\epsilon$
+证：
 
-由于$a_n$极限存在，所以$a_n$必有界。记为：$|a_n|\le{M}$，所以$\sqrt{a_n}\le\sqrt{M}$
+当a=0时，对任意的$\epsilon>0,\epsilon^2>0, \exists{N_1},\forall{n>N_1}, |a_n-a|=|a_n-0|=|a_n|<\epsilon^2$
+
+所以$\sqrt{a_n}<\epsilon$
+
+当a>0时，对任意的$\epsilon>0,\exists{N},\forall{}n>N,|a_n-a|<\epsilon$
 
 由$|a_n-a|<\epsilon$，即$|(\sqrt{a_n}-\sqrt{a})(\sqrt{a_n}+\sqrt{a})|<\epsilon$
 
-所以$|\sqrt{a_n}-\sqrt{a}|<\frac{\epsilon}{\sqrt{a_n}+\sqrt{a}}<\frac{\epsilon}{\sqrt{M}+\sqrt{a}}=\frac{1}{\sqrt{M}+\sqrt{a}}\epsilon$
+所以$|\sqrt{a_n}-\sqrt{a}|<\frac{\epsilon}{\sqrt{a_n}+\sqrt{a}}\le\frac{\epsilon}{\sqrt{a}}=\frac{1}{\sqrt{a}}\epsilon$
 
-${\sqrt{M}+\sqrt{a}}$为常数，所以$\lim\limits_{n\to\infty}\sqrt{a_n}=\sqrt{a}$
+${\frac{1}{\sqrt{a}}}$为常数，所以$\lim\limits_{n\to\infty}\sqrt{a_n}=\sqrt{a}$
 
 3.若$\lim\limits_{n\to\infty}a_n=a$,则$\lim\limits_{n\to\infty}|a_n|=|a|$.反之如何？
 
@@ -213,7 +213,7 @@ $\le|b_i||a_n-a|(|a_n^{i-1}|+|a_n^{i-2}a|+...+|a_na^{i-2}|+|a^{i-1}|)$
 
 $\le|a_n-a||b_i|(|M^{i-1}|+|M^{i-2}a|+...+|M^{i-2}|+|a^{i-1}|)$
 
-记$c_i=|b_i|(|M^{i-1}|+|M^{i-2}a|+...+|M^{i-2}|+|a^{i-1}|$,则：
+记$c_i=|b_i|(|M^{i-1}|+|M^{i-2}a|+...+|M^{i-2}|+|a^{i-1}|)\ge0$,则：
 
 $|P(a_n)-P(a)|=|b_k(a_n^k-a^k)+b_{k-1}(a_n^{k-1}-a^{k-1})+...b_1(a_n-a)|$
 

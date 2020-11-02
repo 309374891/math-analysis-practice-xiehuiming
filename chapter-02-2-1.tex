@@ -257,13 +257,21 @@ $1+\frac{\epsilon}{b^a}>b^{a_n-a}>b^{\log_b{(1-\frac{\epsilon}{b^a})}}=1-\frac{\
 
 对任意的$\epsilon>0$
 
-当b>1时，存在$N_1$，当$n>N_1$时，$b^{\epsilon}-1>0,|a_n-a|<a(b^{\epsilon}-1)$，得$a_n<ab^{\epsilon}$
+当b>1时，$b^{\epsilon}-1>0,b^{-\epsilon}-1<0$
 
-$|\log_b{a_n}-\log_b{a}|=|\log_b{\frac{a_n}{a}}|=\epsilon$
+存在$N_1$，当$n>N_1$时，$a(b^{-\epsilon}-1)<a_n-a<a(b^{\epsilon}-1)$，得$ab^{-\epsilon}<a_n<ab^{\epsilon}$,所以：
 
-当b<1时，存在$N_2$，当$n>N_2$时，$1-b^{\epsilon}>0,|a_n-a|<a(1-b^{\epsilon})$，得$a_n>ab^{\epsilon}$
+$b^{-\epsilon}<\frac{a_n}{a}<b^\epsilon\Rightarrow-\epsilon<\log_b{\frac{a_n}{a}}<\epsilon$
 
-$|\log_b{a_n}-\log_b{a}|=|\log_b{\frac{a_n}{a}}|=\epsilon$
+$|\log_b{a_n}-\log_b{a}|=|\log_b{\frac{a_n}{a}}|<\epsilon$
+
+当b<1时，$1-b^{\epsilon}>0,1-b^{-\epsilon}<0$
+
+存在$N_2$，当$n>N_2$时，$a(1-b^{-\epsilon})<a-a_n<a(1-b^{\epsilon})$，得$ab^{-\epsilon}>a_n>ab^{\epsilon}$,所以：
+
+$b^{-\epsilon}>\frac{a_n}{a}>b^\epsilon\Rightarrow -\epsilon<\log_b{\frac{a_n}{a}}<\epsilon$
+
+$|\log_b{a_n}-\log_b{a}|=|\log_b{\frac{a_n}{a}}|<\epsilon$
 
 (4).
 
